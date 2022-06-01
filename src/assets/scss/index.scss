@@ -1,0 +1,18 @@
+@import "./common/common";
+@import "./components/index";
+@import "./color/color";
+
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+a {
+    text-decoration: none;
+}
+ul, li {
+    list-style: none;
+    padding-inline-start: 0;
+    padding-inline-end: 0;
+}

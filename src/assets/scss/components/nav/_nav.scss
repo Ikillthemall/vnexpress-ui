@@ -1,0 +1,32 @@
+@import "../../color/color";
+
+.navbar {
+    border-bottom: 1px solid #e5e5e5;
+}
+.navbar-list {
+    position: relative;
+    display: flex;
+}
+.navbar-item {
+    margin-left: 1.8rem;
+    font-size: 1.6rem;
+    font-weight: 600;
+    .navbar-link {
+        display: block;
+        padding: 16.5px 0;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        color: $primary-text;
+        &:hover {
+            color: $hover-nav;
+        }
+    }
+    .navbar-link:first-child() {
+        position: absolute;
+        left: 0;
+    }
+}
+.anticon.anticon-unordered-list:hover {
+    color: $primary;
+}

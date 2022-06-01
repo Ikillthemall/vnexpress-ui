@@ -1,0 +1,137 @@
+.news-padding {
+    padding-right: 2rem;
+}
+.news-container {
+    margin-top: 2rem;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    position: relative;
+    // border-bottom: 1px solid #e5e5e5;
+    &::before {
+        content: "";
+        position: absolute;
+        width: 100%;
+        height: 1px;
+        top: 0;
+        background-color: #e5e5e5;
+    }
+}
+.col-right {
+    border-left: 1px solid #e5e5e5;
+    .cates-sub {
+        padding-top: 8px;
+        display: flex;
+        font-size: 1.6rem;
+        font-weight: 500;
+        color: #222;
+        line-height: 2rem;
+        .cates-symbol {
+            color: #e5e5e5;
+            margin-right: 2rem;
+        }
+        &:hover {
+            color: $hover-title;
+        }
+    }
+}
+
+.box-category.box-tygia-vietllot {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 15px;
+    .box-left {
+      width: calc(42% - 5px);
+      margin-right: 10px;
+      img {
+        border: 0;
+        width: 100%;
+        height: 76px;
+      }
+    }
+    .box-right {
+      width: calc(42% - 5px);
+      .box-giavang {
+        table {
+          border-top: 1px solid #e6e6e6;
+          border-left: 1px solid #e6e6e6;
+          border-collapse: collapse;
+          td {
+            border-right: 1px solid #e6e6e6;
+            border-bottom: 1px solid #e6e6e6;
+            font-size: 12px;
+            padding: 6px 6px;
+          }
+          td:first-child {
+            width: 37.5%;
+            text-align: left;
+            white-space: nowrap;
+          }
+        }
+      }
+    }
+    .box-link {
+      width: calc(16% - 10px);
+      font-size: 0;
+      a {
+        display: inline-block;
+      }
+      a:last-child {
+        margin-top: 4px;
+      }
+    }
+  }
+  .has-bordered {
+      border-bottom: 1px solid #e5e5e5;
+      padding-bottom: 1.5rem;
+  }
+  .item-news-common {
+    border-top: 1px solid #e5e5e5;
+    margin-top: 15px;
+    padding-top: 15px;
+    border-bottom: none;
+    margin-bottom: 0;
+    padding-bottom: 0;
+    img {
+        border: 0;
+        font-size: 0;
+        line-height: 0;
+        max-width: 100%;
+    }
+  }
+  .trending-content {
+    display: flex;
+    align-items: center;
+    height: 50px;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    border-top: 1px solid #e5e5e5;
+    border-bottom: 1px solid #e5e5e5;
+    position: relative;
+    .trending-list {
+        display: flex;
+        align-items: center;
+        .trending-item-main {
+            .anticon.anticon-rise {
+                font-size: 1.6rem;
+            }
+            .trending-link-main {
+                color: #222;
+                font-size: 1.6rem;
+                margin-left: 1rem;
+            }
+        }
+        .trending-item:not(:first-child) {
+            margin-left: 4rem;
+            padding-left: 3rem;
+            .trending-link {
+                color: $primary;
+                font-weight: 500;
+                text-decoration: underline;
+                font-size: 1.6rem;
+                &:hover {
+                    color: $primary-text;
+                }
+            }
+        }
+    }
+  }

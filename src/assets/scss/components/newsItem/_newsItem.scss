@@ -1,0 +1,35 @@
+@import "../../color/color";
+.news-item:not(:first-child) {
+    padding-top: 1.5rem;
+    margin-top: 1.5rem;
+    border-top: 1px solid $border;
+}
+.news-title {
+    font-size: 1.7rem;
+    margin-bottom: 1.4rem;
+    .news-link {
+        color: #222;
+        font-weight: 700;
+        line-height: 2rem;
+        &:hover {
+            color: $hover-title;
+        }
+    }
+}
+.news-image-left {
+    display: block;
+    width: 170%;  
+    // max-height: 120px;
+    margin-right: 1rem;
+    img {
+      object-fit: contain;
+      width: auto;
+    //   height: 100%;
+    }
+}
+.news-des {
+    // text-align: justify;
+    font-size: 1.4rem;
+    color: #4f4f4f;
+    line-height: 2rem;
+}

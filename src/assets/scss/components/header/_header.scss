@@ -1,0 +1,98 @@
+@import "../../color/color";
+header {
+    height: 4rem;
+    background-color: #fff;
+}
+.header-content {
+    display: flex;
+    justify-content: space-between;
+    padding: 1.2rem 0;
+    border-bottom: 1px solid #e5e5e5;
+}
+.header-left {
+    align-items: center;
+}
+.header-logo {
+    margin-right: 2rem;
+}
+.header-rectangle {
+    align-items: center;
+    .header-new, .header-internation {
+        display: inline-block;
+        font-size: 1.4rem;
+        color: #757575;
+        padding: 10px;
+        border: 1px solid #e5e5e5;
+        margin-right: 2rem;
+        border-radius: 5px;
+        &:hover {
+            background-color: #d1cfcf;
+        }
+    }
+    .header-internation {
+        margin-right: 1.8rem;
+    }
+    .header-new-link {
+        margin-left: 5px;
+    }
+}
+.header-time {
+    font-size: 1.4rem;
+    color: #757575;
+    padding-left: 1rem;
+    position: relative;
+    &::before {
+        content: "";
+        position: absolute;
+        top: -50%;
+        left: 0;
+        width: 1px;
+        height: 3rem;
+        background-color: #9e9d9d;
+    }
+}
+.header-action {
+    align-items: center;
+    .header-search {
+        padding-left: 1.5rem;
+        margin-left: 1.5rem;
+        position: relative;
+        input {
+            width: 16rem;
+            padding: 8px;
+            border: 1px solid #9e9d9d;
+            border-radius: 1rem;
+            position: relative;
+        }
+        &::before {
+            content: "";
+            position: absolute;
+            top: 10%;
+            left: 0;
+            width: 1px;
+            height: 3rem;
+            background-color: #9e9d9d;
+        }
+        .anticon.anticon-search {
+            position: absolute;
+            top: 28%;
+            right: 10px;
+            cursor: pointer;
+        }
+    }
+}
+.header-login {
+    margin-left: 2rem;
+    color: #4f4f4f;
+    cursor: pointer;
+    &:hover {
+        color: $hover-title;
+    }
+    .anticon.anticon-user {
+        margin-right: 5px;
+    }
+    span:nth-child(2) {
+        font-size: 1.5rem;
+        font-weight: 400;
+    }
+}
