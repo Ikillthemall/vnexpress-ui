@@ -1,0 +1,100 @@
+@import "../../color/color";
+.main-videos {
+    margin-top: 1rem;
+    padding-top: 1rem;
+}
+.videos-container {
+    background-color: #FCFAF6;
+    border-radius: 5px;
+}
+.videos-menu {
+    display: flex;
+    align-items: center;
+    padding-top: 1.6rem;
+    margin-bottom: 2rem;
+    padding-left: 2rem;
+    .videos-menu-item {
+        .videos-menu-home {
+            position: relative;
+            color: #222;
+            font-size: 1.8rem;
+            font-weight: 700;
+            margin-right: 2.2rem;
+            &:hover {
+                color: $primary;
+            }
+            &::before {
+                position: absolute;
+                content: "";
+                width: 100%;
+                height: 1.5px;
+                background-color: $primary;
+                bottom: -8px;
+                left: 0;
+            }
+        }
+    }
+    .videos-menu-item:not(:first-child) {
+        margin-right: 2rem;
+        .videos-menu-link {
+            display: block;
+            color: $primary-text;
+            font-size: 1.6rem;
+            font-weight: 400;
+            &:hover {
+                color: $hover-title;
+            }
+        }
+    }
+}
+.videos-play {
+    padding-left: 2rem;
+    padding-top: 1rem;
+}
+.box-scroll-video {
+    padding: 0 15px;
+    height: 400px;
+    overflow: hidden;
+    margin-top: 1rem;   
+    .box-wrapper {
+      overflow-y: auto;
+      height: 100%;
+  
+      .item-news:first-child {
+          padding-top: 0;
+      }
+      .item-news {
+        width: 100%;
+        display: flex;
+        padding-bottom: 2rem;
+        padding-top: 1rem;
+        border-bottom: 1px solid #e5e5e5;
+        .thumb-art {
+          width: 36%;
+          height: 75px;
+          margin-right: 10px;
+        }
+        .title-news {
+          width: calc(100% - 150px);
+          font-size: 1.6rem;
+          .title {
+              line-height: 1.8rem;
+              color: #4f4f4f;
+              font-weight: 500;
+          }
+        }
+      }
+    }
+  }
+  .videos-category {
+      margin-top: 4px;
+      color: #727171;
+      font-size: 1.2rem;
+      font-size: 400;
+  }
+  .box-wrapper::-webkit-scrollbar-track {
+    background: #f1f1f1; 
+}
+.box-wrapper::-webkit-scrollbar-thumb {
+    background: #888; 
+  }  

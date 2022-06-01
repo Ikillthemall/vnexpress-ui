@@ -1,5 +1,5 @@
 
-const NewsItem = ({title, image, des}) => {
+const NewsItem = ({title, image, des, height}) => {
     return (
         <>
             <div className="news-item">
